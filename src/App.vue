@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="app__nav">
       <router-link to="/"><h1 class="nav__logo">Twotter</h1> </router-link>
-      <h2 class="nav__user" v-if="user">@{{ user.username }}</h2>
+      <a class = "nav__user"  v-if="user" href="https://github.com/monotera">@{{ user.username }}</a>
     </nav>
     <router-view />
   </div>
@@ -50,6 +50,7 @@ export default {
   }
   .nav__user {
     font-weight: bold;
+    font-size: 1.7rem;
   }
 }
 </style>
